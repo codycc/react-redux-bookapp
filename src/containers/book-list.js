@@ -1,3 +1,4 @@
+//NOTICE: Because BookList had to be aware of state, it was place in a container folder, not component
 import React, {Component} from 'react';
 // import connect function from react redux, which is the glue between react and redux
 import { connect } from 'react-redux';
@@ -21,7 +22,7 @@ class BookList extends Component {
 //mapstatetoprops will take in application state and set props to the component in this case its books,
 //which is reffered to above in props.books
 //VERY IMPORTANT FUNCTION IN REACT AND REDUX
-//when application state changes, BookList will automatically re-render 
+//when application state changes, BookList will automatically re-render
 function mapStateToProps(state) {
   // Whatever is returned will show up as props
   //inside of BookList
